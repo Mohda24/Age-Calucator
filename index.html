@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Age-calucator🎉🎉</title>
+</head>
+<body>
+    <div class="container px-[15px] flex items-center justify-center min-h-[100vh]">
+        <main class=" w-full md:w-[60%] mx-auto p-[40px] bg-white rounded-l-[25px] rounded-tr-[25px] rounded-br-[100px] flex flex-col gap-[30px]">
+            <section class=" flex gap-[20px] ">
+                <div class="day">
+                    <p class=" transition-all duration-500 firstp text-[13px] tracking-[3px] font-[700] text-[rgb(113,111,111)] uppercase mb-[5px]">Day</p>
+                    <input class=" transition-all duration-500 outline-none font-bold text-[32px] w-[150px] rounded-[15px] border border-[hsl(0,0%,86%)] py-[10px] ps-[10px] focus:border-[hsl(259,100%,65%)] " type="text" placeholder="DD">
+                    <p class="alert transition-all duration-500"></p>
+                </div>
+                <div class="month">
+                    <p class=" transition-all duration-500 firstp text-[13px] tracking-[3px] font-[700] text-[rgb(113,111,111)] uppercase mb-[5px]">Month</p>
+                    <input class=" transition-all duration-500 text-[32px] outline-none font-bold w-[150px] rounded-[20px] border border-[hsl(0,0%,86%)] py-[10px] ps-[10px] focus:border-[hsl(259,100%,65%)]" type="text" placeholder="MM">
+                    <p class="alert transition-all duration-500"></p>
+                </div>
+                <div class="year">
+                    <p class=" transition-all duration-500 firstp text-[13px] tracking-[3px] font-[700] text-[rgb(113,111,111)] uppercase mb-[5px]">Year</p>
+                    <input class=" transition-all duration-500 text-[32px] outline-none font-bold w-[150px] rounded-[15px] border border-[hsl(0,0%,86%)] py-[10px] ps-[10px] focus:border-[hsl(259,100%,65%)]" type="text" placeholder="YYYY">
+                    <p class="alert transition-all duration-500"></p>
+                </div>
+            </section>
+            <section class="relative">
+                <div class="line w-full h-[1px] bg-[hsl(0,0%,86%)]"></div>
+                <img class="bg-[hsl(259,100%,65%)] p-[10px] rounded-[50%] absolute right-0 transition-all duration-500 translate-y-[-50%] cursor-pointer hover:bg-black" src="img/icon-arrow.svg" alt="" srcset="">
+            </section>
+            <section>
+                <p class="text-[80px] font-[800] leading-[90px] italic"><span id="year" class="text-[hsl(259,100%,65%)] text-[70px] font-[800]">- -</span>years</p>
+                <p class="text-[80px] font-[800] leading-[90px] italic"><span id="month" class="text-[hsl(259,100%,65%)] text-[70px] font-[800]">- -</span>months</p>
+                <p class="text-[80px] font-[800] leading-[90px] italic"><span id="day" class="text-[hsl(259,100%,65%)] text-[70px] font-[800]">- -</span>days</p>
+
+            </section>
+
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
